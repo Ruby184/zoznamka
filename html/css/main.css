@@ -1,0 +1,323 @@
+/* Global classes */
+.wrap {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+/* Header */
+#header {
+	background-color: #4b5a6c;
+	height: 210px;
+	padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+	#header .logo {
+		text-align: center;
+	}
+
+	#header .logo img {
+		display: inline-block;
+	}
+}
+
+/* Main nav */
+#main-nav #filter-toggle {
+	height: 61px;
+	line-height: 20px;
+	width: 70px;
+	border-radius: 0;
+	background-color: #18bc9c;
+	border: 0;
+	color: #fff;
+	text-align: center;
+}
+
+#main-nav #filter-toggle:hover {
+	background-color: #128f76;
+}
+
+#main-nav #filter-toggle i {
+	font-size: 1.4em;
+}
+
+#main-nav .nav li a {
+	color: #fff;
+}
+
+#main-nav .nav li:hover {
+	background-color: #1a242f;
+}
+
+#main-nav .nav li i {
+	margin-right: 5px;
+	font-size: 1.35em;
+}
+
+#main-nav .link-login a {
+	height: 60px;
+	line-height: 24px!important;
+}
+
+#main-nav .link-login a i {
+	font-size: 2em!important;
+	float: left;
+	margin-top: -4px;
+}
+
+/* Jumbotron */
+.jumbotron {
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-size: 4em;
+}
+
+.jumbotron .btn {
+	margin-top: 15px;
+}
+
+/* Homepage three blocks */
+.three-blocks img {
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+
+/* Featurettes */
+.featurette-divider {
+	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+/* Profiles */
+#profiles-wrap {
+	position: relative;
+	background-color: #e7e7e7;
+}
+
+#profiles {
+	width: 99%;
+	margin: auto;
+	margin-top: 25px;
+	float: right;
+}
+
+@media (max-width: 767px) {
+	#profiles {
+		width: 100%;
+	}
+}
+
+#profiles .profile {
+	width: 314px;
+	position: relative;
+}
+
+#profiles .profile img {
+	display: block;
+}
+
+#profiles .profile .hover {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 20px 15px;
+	text-align: center;
+	line-height: 40px;
+	opacity: 0.7;
+	font-size: 1.2em;
+}
+
+#profiles .profile .hover a {
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #27d012;
+	color: #fff;
+}
+
+#profiles .profile .hover a i {
+	font-size: 1.3em;
+}
+
+#profiles .profile .hover a:first-child {
+	background-color: #555;
+}
+
+#profiles .profile:hover .hover {
+	display: block;
+}
+
+/* Filter */
+#filter {
+	display: none;
+	width: 20%;
+	float: left;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#filter header {
+	height: 50px;
+	width: 100%;
+	background-color: #41307c;
+	line-height: 50px;
+	color: #fff;
+	position: relative;
+	padding-left: 10%;
+}
+
+#filter header span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#filter header #filter-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+	background-color: #37296a;
+	color: #fff;
+}
+
+#filter header #filter-close:hover {
+	background-color: #32255f;
+	text-decoration: none;
+}
+
+/* Profile */
+#profile header {
+	padding-top: 25px;
+}
+
+/* Profile photo */
+#profile header .photo {
+	border: 1px solid #ccc;
+	padding: 0;
+	padding: 6px;
+}
+
+#profile header .photo a {
+	display: block;
+	height: 300px;
+	overflow: hidden;
+}
+
+/* Profile about */
+#profile header .about {
+	text-align: center;
+}
+
+#profile header .about h1 {
+	color: #313b3d;
+	margin: 0;
+	margin-top: 5px;
+}
+
+#profile header .about .dots {
+	color: #757575;
+	font-size: 1.2em;
+	padding-top: 8px;
+}
+
+#profile header .about .dots .fa-venus {
+	color: #f47b9c;
+	font-weight: bold;
+}
+
+#profile header .about .dots .fa-mars {
+	color: #7c8df3;
+	font-weight: bold;
+}
+
+#profile header .about .dots span:before {
+	content: '·';
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 1.2em;
+	position: relative;
+	top: 3px;
+	color: #b3b3b3;
+}
+
+#profile header .about .dots span:first-child:before {
+	display: none;
+}
+
+/* Profile actions */
+#profile header .actions {
+	text-align: center;
+}
+
+#profile header .actions .match {
+	display: block;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	border-radius: 100px;
+	border: 10px solid #eee;
+	padding: 15px;
+	font-size: 2.1em;
+	margin-right: 25px;
+	line-height: 4.6em;
+	margin: 0 auto;
+}
+
+#profile header .actions .match strong {
+	font-size: 3em;
+}
+
+#profile header .actions .buttons {
+	margin-top: 30px;
+}
+
+#profile header .actions .buttons .btn {
+	border: 0;
+}
+
+#profile header .actions .buttons .like:hover { background-color: #2aabd2; }
+#profile header .actions .buttons .follow:hover { background-color: #c12e2a; }
+#profile header .actions .buttons .commons:hover { background-color: #419641; }
+
+#profile header .actions .buttons .report {
+	text-align: center;
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
