@@ -83,4 +83,39 @@ $(function() {
 
 	$(window).on('scroll', filterScroll);
 
+	/* Profile Knob */
+	window.setMatchValue = function(value)
+    {
+    	$("#profile .match .content strong").text(value);
+    	$("#profile .match .knob").val(value).trigger('change');
+    }
+
+    window.animateMatchValue = function(value)
+    {
+    	$({someValue: 0}).animate({someValue: value}, {
+		    duration: 2000,
+		    easing: 'easeInOutCubic',
+		    step: function() { 
+		    	window.setMatchValue(Math.ceil(this.someValue));
+		    }
+		});
+    }
+
+	$("#profile .match .knob").knob({
+		'min': 0,
+    	'max': 100,
+    	'step': 1,
+    	'readOnly': true,
+    	'width': 90,
+    	'height': 90,
+    	'bgColor': '#eeeeee',
+    	'fgColor': '#2C3E50',
+    	'thickness': 0.10,
+    	'angleOffset': 180,
+    	'displayInput': false,
+    });
+
+    //window.animateMatchValue($("#profile .match").data('value'));
+    window.animateMatchValue(Math.random() * 100);
+
 });
