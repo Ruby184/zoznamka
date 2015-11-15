@@ -3,7 +3,7 @@ $(function() {
 	// Profiles
 	var $profiles = $('#profiles');
 
-	var profilesWall = new freewall("#profiles");
+	window.profilesWall = new freewall("#profiles");
 	profilesWall.reset({
 		selector: '.profile',
 		animate: true,
@@ -14,11 +14,8 @@ $(function() {
 		}
 	});
 
+	// Resize wall items
 	profilesWall.fitWidth();
-		
-	/*profilesWall.container.find('.profile img').load(function() {
-		profilesWall.fitWidth();
-	});*/
 
 	// Filter
 	var $filter = $('#filter');
@@ -117,5 +114,27 @@ $(function() {
 
     //window.animateMatchValue($("#profile .match").data('value'));
     window.animateMatchValue(Math.random() * 100);
+
+    // Profile - photos
+	var $photos = $('#photos');
+
+	window.photosWall = new freewall("#photos");
+	photosWall.reset({
+		selector: '.photo',
+		animate: true,
+		cellW: 150,
+		cellH: 'auto',
+		onResize: function() {
+			photosWall.fitWidth();
+		}
+	});
+
+	// Resize wall items
+	photosWall.fitWidth();
+
+	// Resize wall items when tab is shown
+	$('a[data-fitWall][data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		photosWall.fitWidth();
+	})
 
 });
