@@ -1,0 +1,442 @@
+/* Global classes */
+.wrap {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+/* Header */
+#header {
+	background-color: #4b5a6c;
+	height: 210px;
+	padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+	#header .logo {
+		text-align: center;
+	}
+
+	#header .logo img {
+		display: inline-block;
+	}
+}
+
+/* Main nav */
+#main-nav #filter-toggle {
+	height: 61px;
+	line-height: 20px;
+	width: 70px;
+	border-radius: 0;
+	background-color: #18bc9c;
+	border: 0;
+	color: #fff;
+	text-align: center;
+}
+
+#main-nav #filter-toggle:hover {
+	background-color: #128f76;
+}
+
+#main-nav #filter-toggle i {
+	font-size: 1.4em;
+}
+
+#main-nav .nav li a {
+	color: #fff;
+}
+
+#main-nav .nav li:hover {
+	background-color: #1a242f;
+}
+
+#main-nav .nav li i {
+	margin-right: 5px;
+	font-size: 1.35em;
+}
+
+#main-nav .link-login a {
+	height: 60px;
+	line-height: 24px!important;
+}
+
+#main-nav .link-login a i {
+	font-size: 2em!important;
+	float: left;
+	margin-top: -4px;
+}
+
+/* Jumbotron */
+.jumbotron {
+	text-align: center;
+}
+
+.jumbotron h1 {
+	font-size: 4em;
+}
+
+.jumbotron .btn {
+	margin-top: 15px;
+}
+
+/* Homepage three blocks */
+.three-blocks img {
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+}
+
+/* Featurettes */
+.featurette-divider {
+	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+
+/* Profiles */
+#profiles-wrap {
+	position: relative;
+	background-color: #ecf0f1;
+}
+
+#profiles {
+	width: 99%;
+	margin: auto;
+	margin-top: 25px;
+	float: right;
+}
+
+@media (max-width: 767px) {
+	#profiles {
+		width: 100%;
+	}
+}
+
+#profiles .profile {
+	width: 314px;
+	position: relative;
+}
+
+#profiles .profile img {
+	display: block;
+}
+
+#profiles .profile .hover {
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 20px 15px;
+	text-align: center;
+	line-height: 40px;
+	opacity: 0.7;
+	font-size: 1.2em;
+}
+
+#profiles .profile .hover a {
+	display: block;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-color: #27d012;
+	color: #fff;
+}
+
+#profiles .profile .hover a i {
+	font-size: 1.3em;
+}
+
+#profiles .profile .hover a:first-child {
+	background-color: #555;
+}
+
+#profiles .profile:hover .hover {
+	display: block;
+}
+
+/* Filter */
+#filter {
+	display: none;
+	width: 20%;
+	float: left;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#filter header {
+	height: 50px;
+	width: 100%;
+	background-color: #41307c;
+	line-height: 50px;
+	color: #fff;
+	position: relative;
+	padding-left: 10%;
+}
+
+#filter header span {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#filter header #filter-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+	background-color: #37296a;
+	color: #fff;
+}
+
+#filter header #filter-close:hover {
+	background-color: #32255f;
+	text-decoration: none;
+}
+
+/* Profile */
+#profile header {
+	padding-top: 25px;
+}
+
+/* Profile photo */
+#profile header .photo {
+	border: 1px solid #ccc;
+	padding: 0;
+	padding: 6px;
+}
+
+#profile header .photo a {
+	display: block;
+	height: 300px;
+	overflow: hidden;
+}
+
+/* Profile about */
+#profile header .about {
+	position: relative;
+	padding-left: 5px;
+}
+
+#profile header .about h1 {
+	color: #313b3d;
+	margin: 0;
+	padding-top: 10px;
+}
+
+#profile header .about .dots {
+	color: #757575;
+	font-size: 1.2em;
+	padding-top: 8px;
+}
+
+#profile header .about .dots .fa-venus {
+	color: #f47b9c;
+	font-weight: bold;
+}
+
+#profile header .about .dots .fa-mars {
+	color: #7c8df3;
+	font-weight: bold;
+}
+
+#profile header .about .dots span:before {
+	content: '·';
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 1.2em;
+	position: relative;
+	top: 3px;
+	color: #b3b3b3;
+}
+
+#profile header .about .dots span:first-child:before {
+	display: none;
+}
+
+#profile header .about .match {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+#profile header .about .match .content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 85px;
+	width: 85px;
+	text-align: center;
+}
+
+#profile header .about .match strong {
+	font-size: 3.1em;
+}
+
+#profile header .about .match input {
+	display: none;
+}
+
+/* Profile actions */
+#profile header .actions {
+	text-align: center;
+}
+
+#profile header .actions .buttons {
+	margin-top: 30px;
+}
+
+#profile header .actions .buttons .btn {
+	border: 0;
+}
+
+#profile header .actions .buttons .like:hover { background-color: #2aabd2; }
+#profile header .actions .buttons .follow:hover { background-color: #c12e2a; }
+#profile header .actions .buttons .commons:hover { background-color: #419641; }
+
+#profile header .actions .buttons .report {
+	text-align: center;
+	padding-top: 5px;
+	font-size: 1.2em;
+}
+
+#profile section .tabs {
+	margin-top: 25px;
+	text-align: justify;
+	line-height: 1.7em;
+	color: #555;
+}
+
+#profile section .tabs h2 {
+	font-size: 1.4em;
+	color: #2c3e50;
+}
+
+/* Profile photos */
+#photos {
+	width: 100%;
+}
+
+#photos .photo {
+	width: 150px;
+	position: relative;
+}
+
+/* Custom table */
+table.table-custom tr {
+	color: #999;
+	border-bottom: 1px solid #eee;
+	font-size: 0.9em;
+}
+
+table.table-custom tr:first-child {
+	border-top: 1px solid #eee;
+}
+
+table.table-custom tr th {
+	font-weight: normal;
+}
+
+table.table-custom tr td {
+	color: #2c3e50;
+}
+
+/* Custom tabs */
+.nav.nav-tabs.nav-tabs-custom {
+	margin-bottom: 15px;
+}
+
+.nav.nav-tabs.nav-tabs-custom li a,
+.nav.nav-tabs.nav-tabs-custom li.active a {
+	border: 0;
+	text-transform: uppercase;
+	color: #999;
+	background-color: transparent;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.nav.nav-tabs.nav-tabs-custom li.active a {
+	color: #2c3e50;
+	font-weight: bold;
+	border-bottom: 3px solid #c12e2a;
+}
+
+/* Custom definition list */
+.dl-custom dt {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+
+.dl-custom dd {
+	border-bottom: 1px solid #ecf0f1;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+/* About us */
+#about {
+	text-align: center;
+}
+
+#about h1 {
+	padding: 30px 0;
+}
+
+#about .person {
+	padding: 50px;
+}
+
+/* Footer */
+#footer {
+	background-color: #ecf0f1;
+	color: #698690;
+	padding: 50px 0;
+	border-top: 1px solid #dde4e6;
+	margin-top: 50px;
+}
+
+#footer strong {
+	color: #2c3e50;
+	font-size: 1.5em;
+}
+
+#footer a {
+	color: #698690;
+}
+
+#footer a:hover {
+	color: #2c3e50;
+}
+
+#footer .socials {
+	margin-top: 25px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
