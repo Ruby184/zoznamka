@@ -206,6 +206,14 @@
 	text-decoration: none;
 }
 
+#filter form {
+	padding: 20px;
+}
+
+#filter form .form-group button {
+	margin-left: 25px;
+}
+
 /* Profile */
 #profile header {
 	padding-top: 25px;

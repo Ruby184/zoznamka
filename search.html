@@ -55,6 +55,53 @@
         <span>Nájdi si známosť na mieru</span>
         <a href="#" id="filter-close" data-filter-toggle><i class="fa fa-times"></i></a>
       </header>
+      <form role="form">
+        <div class="form-group">
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="male"> Muži
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="female"> Ženy
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="gender" value="both" checked> Všetci
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="age">Vek</label>
+          <div class="row">
+            <div class="col-xs-3">
+              <input type="text" class="form-control" placeholder="od">
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" placeholder="do">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="school">Škola</label>
+          <select multiple class="form-control" id="school">
+            <option>Slovenská technická univerzita</option>
+            <option>Univerzita Komenského</option>
+            <option>Paneurópska vysoká škola</option>
+            <option>Ekonomická univerzita</option>
+            <option>Vysoká škola múzických umení</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="advanced">Pokročilé</label>
+          <button type="button" class="btn btn-default"><i class="fa fa-plus"></i> Pridať kritérium</button>
+        </div>
+        <div class="form-group">
+          <label for="order">Zoradiť podľa</label>
+          <select class="form-control" id="order">
+            <option>Zhoda</option>
+            <option>Kto je tu nový</option>
+            <option>Naposledy online</option>
+            <option>Najviac aktívny</option>
+          </select>
+        </div>       
+      </form>
     </div>
 
       <div id="profiles">
