@@ -1,5 +1,4 @@
-$(function() {
-
+$(window).on('load', function() {
 	// Profiles
 	var $profiles = $('#profiles');
 
