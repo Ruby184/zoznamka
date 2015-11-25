@@ -23,7 +23,14 @@
 }
 
 /* Main nav */
+#filter-toggle-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 #main-nav #filter-toggle {
+	display: block;
 	height: 61px;
 	line-height: 20px;
 	width: 70px;

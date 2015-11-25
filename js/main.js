@@ -79,6 +79,28 @@ $(window).on('load', function() {
 
 	$(window).on('scroll', filterScroll);
 
+	window.shuffleProfiles = function()
+	{
+		var parent = $("#profiles");
+		var divs = parent.children();
+		while (divs.length) {
+			parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+		}
+		profilesWall.fitWidth();
+	}
+
+	$('#filter-form').on('change', window.shuffleProfiles);
+
+	$('input').iCheck({
+		checkboxClass: 'icheckbox_flat-purple',
+		radioClass: 'iradio_flat-purple'
+	});
+
+	// Chosen
+	$('select:not(.no-chosen)').chosen({
+		width: '100%'
+	});
+
 	/* Profile Knob */
 	window.setMatchValue = function(value)
     {
