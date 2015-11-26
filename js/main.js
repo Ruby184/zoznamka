@@ -96,6 +96,8 @@ $(window).on('load', function() {
 		radioClass: 'iradio_flat-purple'
 	});
 
+	$('[data-toggle="tooltip"]').tooltip();
+
 	// Chosen
 	$('select:not(.no-chosen)').chosen({
 		width: '100%'
